@@ -34,7 +34,7 @@ export default function FilmPosters({ posters: items = posters }: { posters?: Po
   return (
     <div className="flex flex-wrap gap-10 justify-center py-16">
       {items.map((p, i) => (
-        
+        <a
           key={p.title}
           href={p.href}
           className="poster-float relative w-56 md:w-64 aspect-[2/3] rounded-lg overflow-hidden shadow-xl group"
