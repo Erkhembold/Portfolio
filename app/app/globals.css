@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-text {
+  background: linear-gradient(120deg, #ffffff 0%, #a9c4ff 30%, #ffffff 55%, #d8b4fe 75%, #ffffff 100%);
+  background-size: 250% 250%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 6s ease-in-out infinite, float 5s ease-in-out infinite;
+}
+@keyframes shimmer { 0%, 100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+
+.poster-float { animation: poster-drift 4.5s ease-in-out infinite; }
+@keyframes poster-drift { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-14px) rotate(-1deg); } }
+.poster-float:hover { animation-play-state: paused; transform: translateY(-6px) rotate(0deg); }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-text, .poster-float { animation: none; }
+}
