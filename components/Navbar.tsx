@@ -11,7 +11,7 @@ const links = [
 
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 inset-x-0 z-50 flex items-center justify-between px-6 md:px-12 py-5 bg-paper/70 backdrop-blur-lg border-b border-border/40">
+    <nav className="fixed top-0 inset-x-0 z-[100] flex items-center justify-between px-6 md:px-12 py-5 bg-paper/70 backdrop-blur-lg border-b border-border/40">
       <Link href="/" className="w-10 h-10 flex items-center justify-center bg-ink text-paper font-display font-black text-sm rounded-md">
         EN
       </Link>
