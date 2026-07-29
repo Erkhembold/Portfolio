@@ -42,11 +42,11 @@ export default function FilmPosters({ posters: items = posters }: { posters?: Po
         >
           <img src={p.image} alt={p.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
 
-          <span className="absolute top-4 right-4 bg-accent text-paper text-xs font-display font-bold uppercase tracking-wide px-3 py-1 rounded-full">
+          <span className="absolute top-4 right-4 bg-accent text-ink text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full">
             {p.tag}
           </span>
 
-          <span className="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-paper/15 border border-white/35 backdrop-blur-lg text-white text-xs font-display font-bold uppercase tracking-widest px-4 py-2 rounded-full whitespace-nowrap">
+          <span className="absolute bottom-4 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-paper/15 border border-white/35 backdrop-blur-lg text-white text-xs font-bold uppercase tracking-widest px-4 py-2 rounded-full whitespace-nowrap">
             Click to view →
           </span>
         </a>

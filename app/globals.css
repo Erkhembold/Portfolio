@@ -2,19 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.bubbly-letter {
-  animation: bubble-float 3.2s ease-in-out infinite;
-  will-change: transform;
-}
-@keyframes bubble-float {
-  0%, 100% { transform: translateY(0) scale(1); }
-  50% { transform: translateY(-14px) scale(1.03); }
-}
-
 .poster-float { animation: poster-drift 4.5s ease-in-out infinite; }
 @keyframes poster-drift { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-14px) rotate(-1deg); } }
 .poster-float:hover { animation-play-state: paused; transform: translateY(-6px) rotate(0deg); }
 
 @media (prefers-reduced-motion: reduce) {
-  .bubbly-letter, .poster-float { animation: none; }
+  .poster-float { animation: none; }
 }
