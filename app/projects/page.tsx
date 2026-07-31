@@ -79,6 +79,24 @@ export default function ProjectsPage() {
             </div>
           </div>
 
+          <div className="flex flex-col md:flex-row-reverse gap-8 md:gap-12 items-start p-6 rounded-xl hover:bg-accent/5 transition-colors duration-300">
+            <div className="flex-1 space-y-4">
+              <div className="w-6 h-1 bg-accent rounded-full" />
+              <h3 className="text-2xl md:text-3xl font-bold">Aerial Photography &amp; Drone Videography</h3>
+              <p className="text-muted leading-relaxed">I have been flying drones for over a year, using my DJI Mini 2 to capture aerial photographs and cinematic videos of Mongolia&apos;s landscapes, cities, and cultural landmarks. My work focuses on showcasing the country&apos;s natural beauty and urban environments through high-quality aerial cinematography, combining technical flight skills with visual storytelling.</p>
+              <p className="text-muted leading-relaxed">I document and publish my footage on my YouTube channel, where I share drone videos featuring locations across Mongolia, including city skylines, historical monuments, and scenic natural destinations. Through this hobby, I have developed experience in drone operation, aerial composition, camera control, post-production editing, and creating engaging visual content for online audiences.</p>
+              <a href="https://www.youtube.com/@Starkindustries15" target="_blank" rel="noopener noreferrer" className="inline-block text-sm font-semibold text-accent hover:opacity-70 transition-opacity">
+                YouTube: Stark Industries →
+              </a>
+            </div>
+            <div className="flex-1 w-full">
+              <div className="relative aspect-video overflow-hidden rounded-lg shadow-md">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/projects/drone-thumbnail.png" alt="Ulaanbaatar, Mongolia aerial drone footage at night" className="w-full h-full object-cover hover:scale-[1.03] transition-transform duration-500" />
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
