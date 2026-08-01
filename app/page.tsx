@@ -1,13 +1,13 @@
 import Hero from "@/components/Hero"
 import ScrollSections from "@/components/ScrollSections"
-import FilmPosters from "@/components/FilmPosters"
+import SocialsDock from "@/components/SocialsDock"
 
 export default function Home() {
   return (
     <main>
       <Hero />
       <ScrollSections />
-      <FilmPosters />
+      <SocialsDock />
     </main>
   )
 }

@@ -1,11 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.poster-float { animation: poster-drift 4.5s ease-in-out infinite; }
-@keyframes poster-drift { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-14px) rotate(-1deg); } }
-.poster-float:hover { animation-play-state: paused; transform: translateY(-6px) rotate(0deg); }
-
-@media (prefers-reduced-motion: reduce) {
-  .poster-float { animation: none; }
-}
