@@ -1,23 +1,6 @@
 import Footer from "@/components/Footer"
 import RevealText from "@/components/RevealText"
-
-const gallery = [
-  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0800-LsCMadwISLdapR1lFd9KTT8CLoPTpx.jpeg", alt: "Erkhembold with MFF U14 League trophy" },
-  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0830-nlIQJ39FKV7PTGmzR12dDlz0SFs9La.jpeg", alt: "Team celebrating with fans in the stands" },
-  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_2425-ZfQSsTyosNLKhgoLDt4caRf7781n9W.jpeg", alt: "Erkhembold in futsal action" },
-  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0803-kdGj1AbP2Q4XetZArOj7hUGSwz1lvT.jpeg", alt: "Team photo with fans celebrating" },
-  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_3270-mIBTXRAF2oItc6jTd3E1Qfebk4yWVy.jpeg", alt: "Erkhembold portrait in jersey" },
-  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_3260-ZY7qf51SmIxVeeiVDE3RYz0j04FrbK.jpeg", alt: "Teammates walking together" },
-  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_4172-Mmd41avqdxBxJRWFHGz9dZWsMiISol.jpeg", alt: "Erkhembold in defensive stance" },
-  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_3721-3SuoGJH2aaR6wmGBm2AbjsR95e417W.jpeg", alt: "Erkhembold playing against opponents" },
-  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_4001-dSlbbbikbj5vcCl4tMZjii5KXlyCVA.jpeg", alt: "Action near the goal" },
-  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5759%20%281%29-kzfznoa81frt9EyUlp2hLzyLO6IfD4.jpeg", alt: "Erkhembold in aerial duel" },
-  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0872-oiI7ChmeFkUlE504z4ESkbi0XXv0o6.jpeg", alt: "Team at Gothia Cup stadium with Mongolian flags" },
-  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0628%20%281%29-FcQgNyeeu6cVPmyxVZCVutmCp3YeEc.jpeg", alt: "Erkhembold dribbling past defender" },
-  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5758%20%281%29-99rJHMUSc796xq9ZxIORKTkfmodqKD.jpeg", alt: "Erkhembold scoring past goalkeeper" },
-  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5761%20%281%29-p0JMRdETqrvcO7AR8yjymaPtvgKd8D.jpeg", alt: "Goal line action" },
-  { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_5167-b9aMHGlOTJyoadXj7SKyYTHxyRAfQ7.jpeg", alt: "Erkhembold dribbling against defender" },
-]
+import FootballGallery from "@/components/FootballGallery"
 
 export default function SportsPage() {
   return (
@@ -30,21 +13,7 @@ export default function SportsPage() {
         <p className="mt-5 text-lg text-muted max-w-2xl">My journey through competitive football and athletics.</p>
       </div>
 
-      <section className="px-4 md:px-8 py-8">
-        <div className="max-w-7xl mx-auto columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
-          {gallery.map((img) => (
-            <div key={img.src} className="break-inside-avoid overflow-hidden rounded-lg">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src={img.src}
-                alt={img.alt}
-                loading="lazy"
-                className="w-full h-auto object-cover hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-          ))}
-        </div>
-      </section>
+      <FootballGallery />
 
       <section className="px-6 md:px-12 py-16 bg-ink text-white">
         <div className="max-w-4xl mx-auto">
