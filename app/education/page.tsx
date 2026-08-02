@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer"
+import RevealText from "@/components/RevealText"
 
 export default function EducationPage() {
   return (
@@ -7,7 +8,7 @@ export default function EducationPage() {
         <div className="flex items-center gap-3 mb-5">
           <div className="w-10 h-1.5 bg-accent rounded-full" />
         </div>
-        <h1 className="text-[clamp(3rem,11vw,8rem)] font-black leading-none tracking-tight text-ink">Education</h1>
+        <RevealText as="h1" className="text-[clamp(3rem,11vw,8rem)] font-black leading-none tracking-tight text-ink">Education</RevealText>
         <p className="mt-5 text-lg text-muted max-w-2xl">My academic journey and achievements.</p>
       </div>
 
@@ -24,7 +25,7 @@ export default function EducationPage() {
 
           <div>
             <div className="w-8 h-1 bg-accent rounded-full mb-4" />
-            <h2 className="text-2xl font-bold mb-4">Academic Background</h2>
+            <RevealText as="h2" className="text-2xl font-bold mb-4">Academic Background</RevealText>
             <p className="text-muted leading-relaxed mb-6">
               I have been studying at Oyunlag School since Grade 1 (2016–Present), building a strong academic foundation across STEM subjects, languages, and interdisciplinary learning. Throughout my education, I have consistently participated in national and international academic competitions, earning multiple awards and recognitions.
             </p>
@@ -49,7 +50,7 @@ export default function EducationPage() {
 
           <div className="pt-8 border-t border-border">
             <div className="w-8 h-1 bg-accent rounded-full mb-4" />
-            <h2 className="text-2xl font-bold mb-4">Languages &amp; Skills</h2>
+            <RevealText as="h2" className="text-2xl font-bold mb-4">Languages &amp; Skills</RevealText>
 
             <h3 className="font-medium mb-3">Languages</h3>
             <ul className="space-y-2 text-muted mb-6">

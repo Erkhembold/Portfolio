@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer"
+import RevealText from "@/components/RevealText"
 
 const gallery = [
   { src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0800-LsCMadwISLdapR1lFd9KTT8CLoPTpx.jpeg", alt: "Erkhembold with MFF U14 League trophy" },
@@ -25,7 +26,7 @@ export default function SportsPage() {
         <div className="flex items-center gap-3 mb-5">
           <div className="w-10 h-1.5 bg-accent rounded-full" />
         </div>
-        <h1 className="text-[clamp(3rem,11vw,8rem)] font-black leading-none tracking-tight text-ink">Football &amp; Sport</h1>
+        <RevealText as="h1" className="text-[clamp(3rem,11vw,8rem)] font-black leading-none tracking-tight text-ink">Football &amp; Sport</RevealText>
         <p className="mt-5 text-lg text-muted max-w-2xl">My journey through competitive football and athletics.</p>
       </div>
 
@@ -49,7 +50,7 @@ export default function SportsPage() {
         <div className="max-w-4xl mx-auto">
           <div className="flex items-center justify-center gap-3 mb-8">
             <div className="w-8 h-1 bg-accent rounded-full" />
-            <h2 className="text-3xl md:text-4xl font-bold text-center">My Football Journey</h2>
+            <RevealText as="h2" className="text-3xl md:text-4xl font-bold text-center">My Football Journey</RevealText>
             <div className="w-8 h-1 bg-accent rounded-full" />
           </div>
           <div className="space-y-6 leading-relaxed text-white/80">
